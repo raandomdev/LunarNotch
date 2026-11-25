@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LunarNotch — The smallest screen on your Mac</title>
+<meta name="description" content="LunarNotch turns the MacBook notch into a calendar, a player and a clock. Quiet on the desktop, there before you unlock. Free.">
+<meta name="theme-color" content="#f4f1ec">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2315120e'/%3E%3Cpath d='M20 18h24v6a3 3 0 0 1-3 3H23a3 3 0 0 1-3-3z' fill='%23f4f1ec'/%3E%3Crect x='18' y='32' width='28' height='3' rx='1.5' fill='%23cf5238'/%3E%3C/svg%3E">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="shell head-inner">
+    <a class="mark" href="#top">
+      <span class="mark-badge" aria-hidden="true"></span>
+      <span class="mark-text">LunarNotch</span>
+    </a>
+    <nav class="head-nav" aria-label="Sections">
+      <a href="#screens">Screens</a>
+      <a href="#quiet">Quiet</a>
+      <a href="#get">Download</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ── 01 · hero ─────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="shell hero-grid">
+
+      <div class="hero-copy">
+        <p class="label reveal"><span>01</span> Lock screen</p>
+        <h1 class="reveal">The smallest screen <em>on your Mac.</em></h1>
+        <p class="intro reveal">LunarNotch turns the black pill above your display into a calendar, a player and a clock. It waits in the notch, follows you to the lock screen, and never opens a window.</p>
+        <ul class="specs reveal">
+          <li>Free</li>
+          <li>macOS 26+</li>
+          <li>Intel &amp; Apple silicon</li>
+        </ul>
+        <div class="actions reveal">
+          <a class="btn" href="https://github.com/raandomdev/LunarNotch/releases/latest" target="_blank" rel="noopener">Download for Mac</a>
+          <a class="textlink" href="#screens">See the screens <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <div class="stage reveal">
+        <div class="tabs" role="tablist" aria-label="Screen state">
+          <button class="tab is-active" type="button" role="tab" aria-selected="true" data-state="lock">Lockscreen</button>
+          <button class="tab" type="button" role="tab" aria-selected="false" data-state="art">Full expanded art</button>
+        </div>
+
+        <div class="macbook">
+          <div class="lid">
+            <div class="screen">
+              <img class="frame is-on" data-frame="lock" src="assets/lock-screen.jpg" width="1264" height="816"
+                   alt="A Mac lock screen over a golden wallpaper, with LunarNotch showing a now playing card above the Touch ID prompt.">
+
+              <img class="frame" data-frame="art" src="assets/full-art.jpg" width="1800" height="1170"
+                   alt="Full expanded art on the lock screen: the album cover on the left, the lyric in the middle, the clock above and the player pill below.">
+            </div>
+          </div>
+          <div class="base" aria-hidden="true"></div>
+        </div>
+
+        <p class="stage-note" id="stageNote">What you see before you sign in. The pill keeps playing, artwork and all.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── 02 · screens ──────────────────────────────────────── -->
+  <section class="section" id="screens">
+    <div class="shell">
+      <div class="sec-head">
+        <div>
+          <p class="label reveal"><span>02</span> Screens</p>
+          <h2 class="reveal">What fits in the pill.</h2>
+        </div>
+        <p class="reveal">Swipe sideways inside the notch. It holds the things you would otherwise open a window to check — and folds away the moment you stop.</p>
+      </div>
+
+      <div class="shots">
+        <figure class="shot reveal" style="--i:1">
+          <div class="shot-frame">
+            <img src="assets/notch-now-playing.jpg" width="856" height="404" loading="lazy"
+                 alt="The notch expanded into a player with artwork, a progress bar and playback controls.">
+          </div>
+          <figcaption><b>01</b><span>Now playing. Artwork, a real scrubber and controls, with no window to click away from.</span></figcaption>
+        </figure>
+
+        <figure class="shot reveal" style="--i:2">
+          <div class="shot-frame">
+            <img src="assets/notch-calendar.jpg" width="814" height="390" loading="lazy"
+                 alt="The notch showing a full month calendar with today circled in coral.">
+          </div>
+          <figcaption><b>02</b><span>Your month. The whole grid, today marked, dots on the days that already have plans.</span></figcaption>
+        </figure>
+
+        <figure class="shot reveal" style="--i:3">
+          <div class="shot-frame">
+            <img src="assets/notch-controls.jpg" width="830" height="372" loading="lazy"
+                 alt="The notch showing a calendar panel, a rail of icons and a now playing card.">
+          </div>
+          <figcaption><b>03</b><span>The rail. Calendar, music, settings, weather — a swipe moves between them.</span></figcaption>
+        </figure>
+      </div>
+
+      <p class="sublabel reveal">Also in the rail</p>
+      <div class="panels">
+        <figure class="shot reveal" style="--i:1">
+          <div class="shot-frame">
+            <img src="assets/panel-weather.jpg" width="956" height="404" loading="lazy"
+                 alt="The notch showing a conditions panel with hourly temperatures and weather icons.">
+          </div>
+          <figcaption><b>04</b><span>Conditions. The next few hours, without opening an app.</span></figcaption>
+        </figure>
+
+        <figure class="shot reveal" style="--i:2">
+          <div class="shot-frame">
+            <img src="assets/panel-notes.jpg" width="1158" height="494" loading="lazy"
+                 alt="The notch showing an empty Quick Notes panel with a rail of icons beside it.">
+          </div>
+          <figcaption><b>05</b><span>Quick Notes. A page for the thought before it goes.</span></figcaption>
+        </figure>
+
+        <figure class="shot reveal" style="--i:1">
+          <div class="shot-frame">
+            <img src="assets/panel-timer.jpg" width="1134" height="474" loading="lazy"
+                 alt="The notch showing a timer set to fifteen minutes with a row of preset buttons.">
+          </div>
+          <figcaption><b>06</b><span>Timer. A dial, six presets, one Start.</span></figcaption>
+        </figure>
+
+        <figure class="shot reveal" style="--i:2">
+          <div class="shot-frame">
+            <img src="assets/panel-translation.jpg" width="1128" height="532" loading="lazy"
+                 alt="The notch showing a translation panel with English and Spanish fields.">
+          </div>
+          <figcaption><b>07</b><span>Translation. Two languages and a swap button.</span></figcaption>
+        </figure>
+
+        <figure class="shot reveal" style="--i:1">
+          <div class="shot-frame">
+            <img src="assets/panel-calculator.jpg" width="1016" height="660" loading="lazy"
+                 alt="The notch showing a calculator keypad in the notch.">
+          </div>
+          <figcaption><b>08</b><span>Calculator. A numpad you can reach without moving.</span></figcaption>
+        </figure>
+
+        <p class="panels-note reveal" style="--i:2">Five of them, and the rail scrolls if you add more.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 03 · small print ──────────────────────────────────── -->
+  <section class="section" id="facts">
+    <div class="shell">
+      <div class="sec-head">
+        <div>
+          <p class="label reveal"><span>03</span> Small print</p>
+          <h2 class="reveal">Everything else, briefly.</h2>
+        </div>
+        <p class="reveal">Four answers instead of a feature grid.</p>
+      </div>
+
+      <dl class="facts">
+        <div class="fact reveal" style="--i:1">
+          <dt>Runs on</dt>
+          <dd>Apple silicon and Intel. Any Mac from 2021 onwards, natively.</dd>
+        </div>
+        <div class="fact reveal" style="--i:2">
+          <dt>Needs</dt>
+          <dd>macOS 26 or later. A notch helps but isn’t required — without one, LunarNotch builds its own island at the top of the screen.</dd>
+        </div>
+        <div class="fact reveal" style="--i:3">
+          <dt>Costs</dt>
+          <dd>Nothing. No account, no ads, no subscription, no licence to recover.</dd>
+        </div>
+        <div class="fact reveal" style="--i:4">
+          <dt>Weighs</dt>
+          <dd>Almost nothing. It wakes on a track change or an event, draws one frame, and goes back to sleep.</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ── 04 · quiet (night) ────────────────────────────────── -->
+  <section class="night" id="quiet">
+    <div class="shell night-grid">
+
+      <div class="night-copy">
+        <p class="label reveal"><span>04</span> Quiet</p>
+        <h2 class="reveal">Almost <em>nothing.</em></h2>
+        <p class="reveal">There is no window to move, no dock icon to find and no menu bar extra to hunt for. LunarNotch lives where the hardware already left a gap, and it leaves the rest of your screen alone.</p>
+
+        <div class="island reveal" aria-hidden="true">
+          <span class="island-art"></span>
+          <span class="island-text">
+            <span class="island-title">Root of all Evil</span>
+            <span class="island-artist">Daniel Caesar</span>
+          </span>
+          <span class="island-eq"><i></i><i></i><i></i></span>
+        </div>
+      </div>
+
+      <ul class="acc">
+        <li class="reveal" style="--i:1">
+          <button class="acc-btn" type="button" aria-expanded="false">
+            <span>Nothing leaves your Mac</span>
+            <span class="sign" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+              <svg class="minus" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14"/></svg>
+            </span>
+          </button>
+          <div class="panel"><p>It reads Calendar and Music on your Mac and sends nothing anywhere. No account, no sign-in, no analytics, no phone home on launch.</p></div>
+        </li>
+        <li class="reveal" style="--i:2">
+          <button class="acc-btn" type="button" aria-expanded="false">
+            <span>Never steals a click</span>
+            <span class="sign" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+              <svg class="minus" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14"/></svg>
+            </span>
+          </button>
+          <div class="panel"><p>Everything outside the pill is click-through. A click in the corner of the screen still lands on the app behind it, exactly as it would without LunarNotch running.</p></div>
+        </li>
+        <li class="reveal" style="--i:3">
+          <button class="acc-btn" type="button" aria-expanded="false">
+            <span>There before you unlock</span>
+            <span class="sign" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+              <svg class="minus" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14"/></svg>
+            </span>
+          </button>
+          <div class="panel"><p>LunarNotch is available on the lock screen, so the track you were playing is still there — artwork, scrubber and controls — one click after Touch ID.</p></div>
+        </li>
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- ── 05 · two places ───────────────────────────────────── -->
+  <section class="section" id="places">
+    <div class="shell">
+      <div class="sec-head">
+        <div>
+          <p class="label reveal"><span>05</span> Everywhere</p>
+          <h2 class="reveal">Two places, one pill.</h2>
+        </div>
+        <p class="reveal">The same card over your wallpaper and over the lock screen. Full quality artwork, the real scrubber, nothing else on top of it.</p>
+      </div>
+
+      <div class="pair">
+        <figure class="shot wide reveal" style="--i:1">
+          <div class="shot-frame">
+            <img src="assets/screen-home.jpg" width="1800" height="1171" loading="lazy"
+                 alt="LunarNotch above a golden desktop wallpaper, with a now playing card at the top of the screen.">
+          </div>
+          <figcaption><b>—</b><span>Over the desktop.</span></figcaption>
+        </figure>
+        <figure class="shot wide reveal" style="--i:2">
+          <div class="shot-frame">
+            <img src="assets/screen-lockscreen.jpg" width="1800" height="1171" loading="lazy"
+                 alt="LunarNotch on a lock screen over a portrait wallpaper, with a floating now playing card.">
+          </div>
+          <figcaption><b>—</b><span>On the lock screen.</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 06 · download ─────────────────────────────────────── -->
+  <section class="download" id="get">
+    <div class="shell download-inner">
+      <div>
+        <p class="label reveal"><span>06</span> Download</p>
+        <h2 class="reveal">Your notch has been waiting.</h2>
+        <p class="download-sub reveal">Free, and yours to keep. No account, no subscription.</p>
+      </div>
+      <div class="download-actions reveal">
+        <div class="download-buttons">
+          <a class="btn" href="https://github.com/raandomdev/LunarNotch/releases/latest" target="_blank" rel="noopener">Download for Mac</a>
+          <a class="btn btn-ghost" href="https://discord.gg/4mY9c5QCTw" target="_blank" rel="noopener">Join the Discord server</a>
+        </div>
+        <span class="download-meta">Universal · macOS 26 or later</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="shell">
+    <div class="foot-inner">
+      <p class="foot-copy">© 2026 LunarNotch</p>
+      <nav class="foot-nav" aria-label="Footer">
+        <a href="https://github.com/raandomdev/LunarNotch/releases/latest" target="_blank" rel="noopener">Download</a>
+        <a href="https://discord.gg/4mY9c5QCTw" target="_blank" rel="noopener">Discord</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Changelog</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+    <p class="foot-credit">Inspired by <a href="https://getcanopy.pro" target="_blank" rel="noopener">Canopy</a>!</p>
+  </div>
+  <div class="wordmark-huge" aria-hidden="true">LunarNotch</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
